@@ -12,10 +12,11 @@
                 O QUE VOCÊ QUER SABER?
             </div>
             <div class="options">
-                <select name="" id="">
-                    <option value="">Preço de venda</option>
-                    <option value="">Preço de custo</option>
-                    <option value="">Margem de lucro</option>
+                <select name="" id="optCalc" onchange="selectCalc()">
+                    <option value="">Escolha o cálculo</option>
+                    <option value="prVenda">Preço de venda</option>
+                    <option value="prCusto">Preço de custo</option>
+                    <option value="margLucro">Margem de lucro</option>
                 </select>
             </div>
             <div class="components">
@@ -30,11 +31,11 @@
                 <ul>
                     <li>
                         <div>
-                            <input type="checkbox" name="" id="prCompra" checked>
+                            <input type="checkbox" name="" id="prCompra">
                             <label for="prCompra">Preço de compra</label>
                         </div>
                         <div>
-                            <input type="number" name="" id="">
+                            <input type="number" name="" id="inpPrCompra">
                         </div>
                     </li>
                     <li>
@@ -57,11 +58,11 @@
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" name="" id="prCompra" checked>
-                            <label for="prCompra">Margem de lucro</label>
+                            <input type="checkbox" name="" id="margLucro">
+                            <label for="margLucro">Margem de lucro</label>
                         </div>
                         <div>
-                            <input type="number" name="" id="">
+                            <input type="number" name="" id="inpMargLucro">
                         </div>
                     </li>
                     <li>
