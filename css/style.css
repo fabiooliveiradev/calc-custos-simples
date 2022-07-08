@@ -1,10 +1,15 @@
 *{
     box-sizing: border-box;
     font-family: "NewsGoth Cn Bt", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+}
+
+body{
+	background-color: #06080D;
 
 }
 .main-container{
@@ -13,19 +18,28 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+	margin: 0 auto;
+	min-width: 375px;
+	max-width: 768px;
     padding: 20px;
     width: 100vw;
+	
 }
 .title{
     font-family: Heavitas;
+	font-size: 18px;
     padding-bottom: 20px;
     text-align: center;
 }
 
 .options{
+	background-color: #1A2E40;
+	border-radius: 40px;
     display: flex;
+	height: 40px;
     justify-content: center;
-    padding-bottom: 20px;
+    margin: 0 auto 20px;
+	width: 250px;
 }
 
 .options select{
@@ -34,8 +48,8 @@
     border-radius: 40px;
     color: #1B8EF2;
     height: 40px;
-    padding: 5px 10px;
-    width: 150px;
+    padding: 5px;
+    width: 190px;
 }
 
 .two-columns{
@@ -87,16 +101,30 @@ input[type=number]{
 
 .resultado #title{
     font-family: Heavitas;
+	font-size: 18px;
     padding-bottom: 5px;
     text-align: center;
 }
 
 .display{
     background-color: #1A2E40;
-    border-radius: 40px;
-    font-size: 40px;
-    font-weight: 700;
+    border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
     padding: 5px 15px;
-    text-align: right;
-    width: 160px;
+    min-width: 160px;
+}
+
+.curency{
+	font-family: Heavitas;
+}
+.value{
+	font-family: Heavitas;
+	font-size: 40px;
+	text-align: right;
+	width: 100%;
+}
+.cents{
+	font-family: Heavitas;
+	text-align: right;
 }
