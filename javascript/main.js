@@ -1,14 +1,10 @@
 
-const OPCAO = document.querySelector('#optCalc');
+const OPCAO = document.querySelector('#operacoes');
 
 OPCAO.addEventListener('change', verificaOperacao);
 
 function verificaOperacao(){
-	var operacaoEscolhida;
-	for(let a of OPCAO){
-		if(a.isChecked){
-			console.log(a)
-		}
-	}
-	
+	let operacaoEscolhida;
+	operacaoEscolhida = OPCAO[OPCAO.selectedIndex].value;
+	return operacaoEscolhida;
 }
